@@ -1,0 +1,34 @@
+{
+  "name": "node-boilerplate",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon node ./bin/www.js",
+    "socket": "nodemon node ./socket.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "chatgpt": "^5.2.4",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.9",
+    "express": "~4.16.1",
+    "express-session": "^1.17.3",
+    "firebase-admin": "^11.10.1",
+    "http-errors": "~1.6.3",
+    "joi": "^17.10.1",
+    "morgan": "~1.9.1",
+    "mysql2": "^3.6.0",
+    "node-fetch": "^3.3.2",
+    "nodemailer": "^6.9.2",
+    "nodemon": "^3.0.1",
+    "path": "^0.12.7",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "sequelize": "^6.33.0",
+    "sha1": "^1.1.1",
+    "socket.io": "^4.6.1",
+    "url": "^0.11.2"
+  }
+}
