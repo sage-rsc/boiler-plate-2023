@@ -9,8 +9,6 @@ import nodemailer from 'nodemailer';
 import fs from 'fs';
 
 class Mailer {
-    btnUrl = "https://your-domain.com";
-    btnText = "Subscription";
 
     constructor(to) {
         this.to = to;
@@ -27,14 +25,23 @@ class Mailer {
     }
 
     btnText(text) {
-        this.btnText = text;
+        if (text) {
+            this.btnText = text;
+            return this;
+        }
+        this.btnText = "Subscription";
         return this;
     }
 
     btnUrl(url) {
-        this.btnUrl = url;
+        if (url) {
+            this.btnUrl = url;
+            return this;
+        }
+        this.btnUrl = "https://your-domain.com";
         return this;
     }
+
 
     subject(sub) {
         if(sub) {
